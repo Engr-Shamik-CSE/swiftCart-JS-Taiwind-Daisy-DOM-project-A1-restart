@@ -64,7 +64,7 @@ const displayProducts = products => {
                             </div>
                             <div class="details-add-btn flex gap-2">
                                 <button class="btn btn-outline flex-1"><i class="fa-regular fa-eye"></i>Details</button>
-                                <button class="btn btn-primary flex-1"><i class="fa-solid fa-cart-arrow-down"></i>Add</button>
+                                <button class="btn btn-primary flex-1" onclick='addToCart(${JSON.stringify(product)})'><i class="fa-solid fa-cart-arrow-down"></i>Add</button>
                             </div>
                         </div>
 

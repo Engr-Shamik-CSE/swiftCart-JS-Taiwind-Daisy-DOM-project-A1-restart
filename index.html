@@ -58,7 +58,7 @@
         <div class="w-full border-b-1 border-bColor-mine">
             <div class="w-full md:w-9/12 mx-auto navbar flex">
                 <div class="navbar-start flex-1 flex">
-                    
+
                     <!-- for large devices -->
                     <div class="flex items-center justify-center">
                         <a class="flex text-center items-center text-xl">
@@ -66,9 +66,6 @@
                             </span>
                         </a>
                     </div>
-
-
-
 
                 </div>
                 <div class="navbar-center hidden lg:flex  flex-1 items-center text-center">
@@ -90,13 +87,13 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
-                                <span class="badge badge-sm indicator-item">8</span>
+                                <span class="badge badge-sm indicator-item" id="cart-count">0</span>
                             </div>
                         </div>
                         <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
-                            <div class="card-body">
-                                <span class="text-lg font-bold">8 Items</span>
-                                <span class="text-info">Subtotal: $999</span>
+                            <div class="card-body" id="cart-summary">
+                                <!-- <span class="text-lg font-bold">8 Items</span>
+                                <span class="text-info">Subtotal: $999</span> -->
                                 <div class="card-actions">
                                     <button class="btn btn-primary btn-block">View cart</button>
                                 </div>
@@ -214,105 +211,25 @@
         </div>
     </section>
 
-    <!-- start " Trending Now  section -->
+
+    <!-- start " Trending Now section  -->
     <section class="">
         <div class=" w-11/12 md:w-9/12 mx-auto gap-2 py-8 md:py-20 ">
             <div class=" pb-10 ">
-                <div class="pb-14 text-center">
+                <div class="pb-14 text-center space-y-10">
                     <h1 class="font-semibold text-2xl md:text-4xl">Trending Now</h1>
+                    <div id="trending-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                    </div>
+
                 </div>
-                <!-- trending product cards container  -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                    <!-- 1st tranding card  -->
-                    <div class="trending-card shadow rounded-2xl  overflow-hidden">
-                        <div class="w-full product-image  overflow-hidden">
-                            <img src="banner-image.png" alt="">
-                        </div>
-                        <div class="p-5 space-y-2">
-                            <div class="branding_rating flex text-xs ">
-                                <div class="flex-1 text-left  ">
-                                    <p class="bg-[#422AD5]/30 text-[#422AD5] inline-block p-1 rounded-lg">Men's Clothing
-                                    </p>
-                                </div>
-                                <div class="flex-0 ">
-                                    <p>rating</p>
-                                </div>
-                            </div>
-                            <div class="product-name-price">
-                                <p class="font-semibold">Mens Casual Premium Slim Fit T-Shirts</p>
-                                <p class="font-bold">$22.3</p>
-                            </div>
-                            <div class="details-add-btn flex justify-between gap-2">
-                                <button class="btn btn-outline flex-1"><i class="fa-regular fa-eye"></i>Details</button>
-                                <button class="btn btn-primary flex-1"><i
-                                        class="fa-solid fa-cart-arrow-down"></i>Add</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- 2nd tranding card  -->
-                    <div class="trending-card shadow rounded-2xl  overflow-hidden">
-                        <div class="w-full product-image  overflow-hidden">
-                            <img src="banner-image.png" alt="">
-                        </div>
-                        <div class="p-5 space-y-2">
-                            <div class="branding_rating flex text-xs ">
-                                <div class="flex-1 text-left  ">
-                                    <p class="bg-[#422AD5]/30 text-[#422AD5] inline-block p-1 rounded-lg">Men's Clothing
-                                    </p>
-                                </div>
-                                <div class="flex-0 ">
-                                    <p>rating</p>
-                                </div>
-                            </div>
-                            <div class="product-name-price">
-                                <p class="font-semibold">Mens Casual Premium Slim Fit T-Shirts</p>
-                                <p class="font-bold">$22.3</p>
-                            </div>
-                            <div class="details-add-btn flex justify-between gap-2">
-                                <button class="btn btn-outline flex-1"><i class="fa-regular fa-eye"></i>Details</button>
-                                <button class="btn btn-primary flex-1"><i
-                                        class="fa-solid fa-cart-arrow-down"></i>Add</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- 3rd tranding card  -->
-                    <div class="trending-card shadow rounded-2xl  overflow-hidden">
-                        <div class="w-full product-image  overflow-hidden">
-                            <img src="banner-image.png" alt="">
-                        </div>
-                        <div class="p-5 space-y-2">
-                            <div class="branding_rating flex text-xs ">
-                                <div class="flex-1 text-left  ">
-                                    <p class="bg-[#422AD5]/30 text-[#422AD5] inline-block p-1 rounded-lg">Men's Clothing
-                                    </p>
-                                </div>
-                                <div class="flex-0 ">
-                                    <p>rating</p>
-                                </div>
-                            </div>
-                            <div class="product-name-price">
-                                <p class="font-semibold">Mens Casual Premium Slim Fit T-Shirts</p>
-                                <p class="font-bold">$22.3</p>
-                            </div>
-                            <div class="details-add-btn flex justify-between gap-2">
-                                <button class="btn btn-outline flex-1"><i class="fa-regular fa-eye"></i>Details</button>
-                                <button class="btn btn-primary flex-1"><i
-                                        class="fa-solid fa-cart-arrow-down"></i>Add</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
-        </div>
     </section>
 
     <!-- Start "Footer" section  -->
     <footer class="bg-[#1E2939] md:pt-10">
-        <div class="footer sm:footer-horizontal w-full md:w-9/12 mx-auto  text-white text-base-content p-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+        <div
+            class="footer sm:footer-horizontal w-full md:w-9/12 mx-auto  text-white text-base-content p-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
             <div class="grid">
                 <div>
                     <a class="flex text-center items-center text-xl">
@@ -322,43 +239,43 @@
                     </a>
                 </div>
                 <p class="text-xs">Your one-stop shop for all your fashion
-and lifestyle needs. Quality products, fast
-delivery, and excellent support.</p>
+                    and lifestyle needs. Quality products, fast
+                    delivery, and excellent support.</p>
 
             </div>
             <div>
                 <div class=" grid">
-                <h6 class="footer-title">QUICK LINKS</h6>
-                <a class="link link-hover">Home</a>
-                <a class="link link-hover">Products</a>
-                <a class="link link-hover">About</a>
-                <a class="link link-hover">Contact</a>
-            </div>
+                    <h6 class="footer-title">QUICK LINKS</h6>
+                    <a class="link link-hover">Home</a>
+                    <a class="link link-hover">Products</a>
+                    <a class="link link-hover">About</a>
+                    <a class="link link-hover">Contact</a>
+                </div>
             </div>
             <div>
                 <div class=" grid">
-                <h6 class="footer-title">SUPPORT</h6>
-                <a class="link link-hover">FAQ</a>
-                <a class="link link-hover">Shipping</a>
-                <a class="link link-hover">Returns</a>
-                <a class="link link-hover">Privacy policy</a>
-            </div>
+                    <h6 class="footer-title">SUPPORT</h6>
+                    <a class="link link-hover">FAQ</a>
+                    <a class="link link-hover">Shipping</a>
+                    <a class="link link-hover">Returns</a>
+                    <a class="link link-hover">Privacy policy</a>
+                </div>
             </div>
             <div>
                 <form class="">
-                <h6 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h6>
-                <fieldset class="w-90 flex-col space-y-5">
-                    <label>The latest news, articles, and resources,
-                        sent to your inbox weekly.</label>
-                    <div class="join pt-3">
-                        <input type="text" placeholder="Enter your email"
-                            class="input input-bordered join-item placeholder-[#333333]" />
-                        <button class="btn btn-primary join-item">Subscribe</button>
-                    </div>
-                </fieldset>
-            </form>
+                    <h6 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h6>
+                    <fieldset class="w-90 flex-col space-y-5">
+                        <label>The latest news, articles, and resources,
+                            sent to your inbox weekly.</label>
+                        <div class="join pt-3">
+                            <input type="text" placeholder="Enter your email"
+                                class="input input-bordered join-item placeholder-[#333333]" />
+                            <button class="btn btn-primary join-item">Subscribe</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
-            
+
         </div>
         <hr>
         <div class="copyright-socialmedia flex justify-between text-white w-full md:w-9/12 mx-auto p-10 text-xs">
@@ -378,6 +295,8 @@ delivery, and excellent support.</p>
 
     <script src="/scripts/index.js"></script>
     <script src="./scripts/loadCategoryWiseProducts.js"></script>
+    <script src="./scripts/cart.js"></script>
+    <script src="./scripts/trending.js"></script>
 </body>
 
 </html>
