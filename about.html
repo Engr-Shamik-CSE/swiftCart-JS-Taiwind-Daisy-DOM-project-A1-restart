@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart</title>
+    <!-- set favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- set daisyUI and Tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- set font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- set font-awesome -->
+    <script src="https://kit.fontawesome.com/e99b1e981f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="tailwind.css"> -->
+    <link rel="stylesheet" href="index.css" type="text/tailwindcss">
+
+    <style type="text/tailwindcss">
+        @theme {
+        --color-primary-brand: #422AD5;
+
+        /* Accent */
+        --color-accent-sky: #00BCFF;
+
+        /* Text */
+        --color-black-text: #181818;
+        --color-midblack-text: #18181B;
+        --color-gray-text: #62748E;
+
+        /* Background */
+        --color-bg-main: #ffffff;
+        --color-section-bg: #F9FAFB;
+
+        /* Border / Outline */
+        --color-bColor-mine: #C6BDBD;
+        /* font */
+        --font-english: "Poppins", sans-serif; /* For English Font */
+        --font-bangla: "Hind Siliguri", sans-serif; /* For Bangla Font */
+        
+        
+
+
+        }
+    </style>
+</head>
+
+<body class="">
+    <!-- start Navbar Section  -->
+    <header class="bg-bg-section " style="--preview:#FCFCFC">
+        <!-- navbar start -->
+        <div class="w-full border-b-1 border-bColor-mine">
+            <div class="w-full md:w-9/12 mx-auto navbar flex">
+                <div class="navbar-start flex-1 flex">
+
+                    <!-- for large devices -->
+                    <div class="flex items-center justify-center">
+                        <a class="flex text-center items-center text-xl">
+                            <span class="font-bold text-2xl text-primary-brand">SwiftCart
+                            </span>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+                <div class="navbar-center hidden lg:flex  flex-1 items-center text-center">
+                    <ul class="menu menu-horizontal px-1 gap-2" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="about.html" class="nav-link active">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end flex w-2/12">
+                    <!-- add to cart portion -->
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                <span class="badge badge-sm indicator-item">8</span>
+                            </div>
+                        </div>
+                        <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                            <div class="card-body">
+                                <span class="text-lg font-bold">8 Items</span>
+                                <span class="text-info">Subtotal: $999</span>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary btn-block">View cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hamburger menu for smal devices -->
+                    <div class="dropdown dropdown-end lg:hidden">
+                        <div tabindex="0" role="button" class="btn m-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                            <li><a href="" class="btn btn-primary">Home</a>
+                            </li>
+                            <li><a href="" class="btn btn-primary">Products</a>
+                            </li>
+                            <li><a href="" class="btn btn-primary">About</a></li>
+                            <li><a href="" class="btn btn-primary">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        <!-- navbar end -->
+    </header>
+
+    <!-- Start "Footer" section  -->
+    <footer class="bg-[#1E2939] md:pt-10">
+        <div class="footer sm:footer-horizontal w-full md:w-9/12 mx-auto  text-white text-base-content p-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+            <div class="grid">
+                <div>
+                    <a class="flex text-center items-center text-xl">
+                        <span class="font-bold text-2xl text-primary-brand"
+                            style="-webkit-text-stroke: .2px white;">SwiftCart
+                        </span>
+                    </a>
+                </div>
+                <p class="text-xs">Your one-stop shop for all your fashion
+and lifestyle needs. Quality products, fast
+delivery, and excellent support.</p>
+
+            </div>
+            <div>
+                <div class=" grid">
+                <h6 class="footer-title">QUICK LINKS</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">Products</a>
+                <a class="link link-hover">About</a>
+                <a class="link link-hover">Contact</a>
+            </div>
+            </div>
+            <div>
+                <div class=" grid">
+                <h6 class="footer-title">SUPPORT</h6>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Shipping</a>
+                <a class="link link-hover">Returns</a>
+                <a class="link link-hover">Privacy policy</a>
+            </div>
+            </div>
+            <div>
+                <form class="">
+                <h6 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h6>
+                <fieldset class="w-90 flex-col space-y-5">
+                    <label>The latest news, articles, and resources,
+                        sent to your inbox weekly.</label>
+                    <div class="join pt-3">
+                        <input type="text" placeholder="Enter your email"
+                            class="input input-bordered join-item placeholder-[#333333]" />
+                        <button class="btn btn-primary join-item">Subscribe</button>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="copyright-socialmedia flex justify-between text-white w-full md:w-9/12 mx-auto p-10 text-xs">
+            <div class="copyrught">
+                <p>2025 SwiftCart, Inc. All rights reserved.</p>
+            </div>
+            <div class="social text-[15px]">
+                <a href="#"><i class="fa-brands fa-facebook "></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="/scripts/index.js"></script>
+    <script src="./scripts/loadCategoryWiseProducts.js"></script>
+    
+</body>
+
+</html>

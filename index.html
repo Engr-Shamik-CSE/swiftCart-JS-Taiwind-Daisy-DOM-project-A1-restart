@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Janala</title>
+    <title>SwiftCart</title>
     <!-- set favicon -->
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <!-- set daisyUI and Tailwindcss -->
@@ -36,7 +36,7 @@
 
         /* Background */
         --color-bg-main: #ffffff;
-        --color-bg-section: #FCFCFC;
+        --color-section-bg: #F9FAFB;
 
         /* Border / Outline */
         --color-bColor-mine: #C6BDBD;
@@ -52,12 +52,13 @@
 </head>
 
 <body class="">
+    <!-- start Navbar Section  -->
     <header class="bg-bg-section " style="--preview:#FCFCFC">
         <!-- navbar start -->
         <div class="w-full border-b-1 border-bColor-mine">
             <div class="w-full md:w-9/12 mx-auto navbar flex">
                 <div class="navbar-start flex-1 flex">
-
+                    
                     <!-- for large devices -->
                     <div class="flex items-center justify-center">
                         <a class="flex text-center items-center text-xl">
@@ -72,10 +73,10 @@
                 </div>
                 <div class="navbar-center hidden lg:flex  flex-1 items-center text-center">
                     <ul class="menu menu-horizontal px-1 gap-2" id="navMenu">
-                        <li><a href="#" class="nav-link active">Home</a></li>
-                        <li><a href="#" class="nav-link">Products</a></li>
-                        <li><a href="#" class="nav-link">About</a></li>
-                        <li><a href="#" class="nav-link">Contact</a></li>
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -129,7 +130,7 @@
         </div>
         <!-- navbar end -->
     </header>
-    <!-- start hero section  -->
+    <!-- start hero Banner section  -->
     <section class="">
         <div class="hero min-h-[600px]" style="background-image: url(banner-image.png);">
             <div class="hero-overlay bg-[#422AD5]/20"></div>
@@ -150,38 +151,233 @@
         </div>
     </section>
 
+    <!-- start "Why choose us" section -->
+    <section class="bg-section-bg">
+        <div class=" w-11/12 md:w-9/12 mx-auto gap-2 py-8 md:py-20 ">
+            <div class=" flex justify-center items-center text-center pb-10 ">
+                <div class="space-y-4">
+                    <h1 class="font-semibold text-2xl md:text-4xl">Why Choose Us</h1>
+                    <p class="text-md md:text-xl">We provide the best shopping experience with top-notch services.</p>
+                </div>
 
+            </div>
+            <!-- service card container div  -->
+            <div class="service-card-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-7 mt-6">
+                <div class="card-container bg-white p-5 rounded-lg space-y-6 md:space-y-10 shadow  pb-10">
+                    <div
+                        class="w-16 h-16 -mt-10 bg-[#EEF2FF]  border-3 border-white rounded-2xl shadow-xl flex items-center justify-center">
+                        <i class="fa-solid fa-truck-fast text-[#422AD5] text-2xl"></i>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg  font-semibold">Fast delivery</h4>
+                        <p>Get your orders delivered to your doorstep
+                            quickly and efficiently.</p>
+                    </div>
+                </div>
+                <div class="card-container bg-white p-5 rounded-lg space-y-6 md:space-y-10 shadow mt-7 md:mt-0 pb-10">
+                    <div
+                        class="w-16 h-16 -mt-10 bg-[#EEF2FF]  border-3 border-white rounded-2xl shadow-xl flex items-center justify-center">
 
+                        <i class="fa-solid fa-headset text-[#422AD5] text-2xl"></i>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg  font-semibold">24/7 Support</h4>
+                        <p>Our support team is available around the
+                            clock to assist you.</p>
+                    </div>
+                </div>
+                <div class="card-container bg-white p-5 rounded-lg space-y-6 md:space-y-10 shadow  mt-7 md:mt-0 pb-10">
+                    <div
+                        class="w-16 h-16 -mt-10 bg-[#EEF2FF]  border-3 border-white rounded-2xl shadow-xl flex items-center justify-center">
+                        <i class="fa-solid fa-shield-halved text-[#422AD5] text-2xl"></i>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg  font-semibold">Secure Payment</h4>
+                        <p>Experience safe and secure transactions with
+                            our encrypted payment systems.</p>
+                    </div>
+                </div>
+                <div class="card-container bg-white p-5 rounded-lg space-y-6 md:space-y-10 shadow mt-7 md:mt-0 pb-10">
+                    <div
+                        class="w-16 h-16 -mt-10 bg-[#EEF2FF]  border-3 border-white rounded-2xl shadow-xl flex items-center justify-center">
+                        <i class="fa-solid fa-arrows-rotate text-[#422AD5] text-2xl"></i>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg  font-semibold">Easy Returns</h4>
+                        <p>Not satisfied? Return your products easily
+                            within 30 days.</p>
+                    </div>
+                </div>
 
-    <section class="w-11/12 mx-auto min-h-screen hero flex flex-col-reverse md:flex-row gap-2 ">
-        <div class="content flex-1 text-center md:text-left">
-            <span class="text-accent-sky text-3xl md:text-4xl font-semibold" style="--preview:#00BCFF">English</span>
-            <span class="text-black-text text-3xl md:text-4xl font-semibold">is Easy!!</span>
-            <p class="font-bangla font-semibold text-2xl md:text-3xl text-midblack-text py-5" style="--preview:#18181B">
-                আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
-                Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
-            </p>
+            </div>
 
         </div>
-        <div class="hero-image flex-1">
-            <img src="" alt="">
-        </div>
-
     </section>
 
-    <!-- start learn vocabularies section -->
-    <section class="w-11/12 mx-auto hero  flex gap-2">
-        <div class="content flex-1 text-center md:text-left text-2xl md:text-4xl">
-            <span class="text-accent-sky  font-semibold" style="--preview:#00BCFF">Let's</span> <span
-                class="text-black-text font-semibold"> Learn Vocabularies</span>
-        </div>
-        <div id="level-container min-h-screen">
+    <!-- start " Trending Now  section -->
+    <section class="">
+        <div class=" w-11/12 md:w-9/12 mx-auto gap-2 py-8 md:py-20 ">
+            <div class=" pb-10 ">
+                <div class="pb-14 text-center">
+                    <h1 class="font-semibold text-2xl md:text-4xl">Trending Now</h1>
+                </div>
+                <!-- trending product cards container  -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- 1st tranding card  -->
+                    <div class="trending-card shadow rounded-2xl  overflow-hidden">
+                        <div class="w-full product-image  overflow-hidden">
+                            <img src="banner-image.png" alt="">
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="branding_rating flex text-xs ">
+                                <div class="flex-1 text-left  ">
+                                    <p class="bg-[#422AD5]/30 text-[#422AD5] inline-block p-1 rounded-lg">Men's Clothing
+                                    </p>
+                                </div>
+                                <div class="flex-0 ">
+                                    <p>rating</p>
+                                </div>
+                            </div>
+                            <div class="product-name-price">
+                                <p class="font-semibold">Mens Casual Premium Slim Fit T-Shirts</p>
+                                <p class="font-bold">$22.3</p>
+                            </div>
+                            <div class="details-add-btn flex justify-between gap-2">
+                                <button class="btn btn-outline flex-1"><i class="fa-regular fa-eye"></i>Details</button>
+                                <button class="btn btn-primary flex-1"><i
+                                        class="fa-solid fa-cart-arrow-down"></i>Add</button>
+                            </div>
+                        </div>
 
-        </div>
+                    </div>
+                    <!-- 2nd tranding card  -->
+                    <div class="trending-card shadow rounded-2xl  overflow-hidden">
+                        <div class="w-full product-image  overflow-hidden">
+                            <img src="banner-image.png" alt="">
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="branding_rating flex text-xs ">
+                                <div class="flex-1 text-left  ">
+                                    <p class="bg-[#422AD5]/30 text-[#422AD5] inline-block p-1 rounded-lg">Men's Clothing
+                                    </p>
+                                </div>
+                                <div class="flex-0 ">
+                                    <p>rating</p>
+                                </div>
+                            </div>
+                            <div class="product-name-price">
+                                <p class="font-semibold">Mens Casual Premium Slim Fit T-Shirts</p>
+                                <p class="font-bold">$22.3</p>
+                            </div>
+                            <div class="details-add-btn flex justify-between gap-2">
+                                <button class="btn btn-outline flex-1"><i class="fa-regular fa-eye"></i>Details</button>
+                                <button class="btn btn-primary flex-1"><i
+                                        class="fa-solid fa-cart-arrow-down"></i>Add</button>
+                            </div>
+                        </div>
 
+                    </div>
+                    <!-- 3rd tranding card  -->
+                    <div class="trending-card shadow rounded-2xl  overflow-hidden">
+                        <div class="w-full product-image  overflow-hidden">
+                            <img src="banner-image.png" alt="">
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="branding_rating flex text-xs ">
+                                <div class="flex-1 text-left  ">
+                                    <p class="bg-[#422AD5]/30 text-[#422AD5] inline-block p-1 rounded-lg">Men's Clothing
+                                    </p>
+                                </div>
+                                <div class="flex-0 ">
+                                    <p>rating</p>
+                                </div>
+                            </div>
+                            <div class="product-name-price">
+                                <p class="font-semibold">Mens Casual Premium Slim Fit T-Shirts</p>
+                                <p class="font-bold">$22.3</p>
+                            </div>
+                            <div class="details-add-btn flex justify-between gap-2">
+                                <button class="btn btn-outline flex-1"><i class="fa-regular fa-eye"></i>Details</button>
+                                <button class="btn btn-primary flex-1"><i
+                                        class="fa-solid fa-cart-arrow-down"></i>Add</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
+
+    <!-- Start "Footer" section  -->
+    <footer class="bg-[#1E2939] md:pt-10">
+        <div class="footer sm:footer-horizontal w-full md:w-9/12 mx-auto  text-white text-base-content p-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+            <div class="grid">
+                <div>
+                    <a class="flex text-center items-center text-xl">
+                        <span class="font-bold text-2xl text-primary-brand"
+                            style="-webkit-text-stroke: .2px white;">SwiftCart
+                        </span>
+                    </a>
+                </div>
+                <p class="text-xs">Your one-stop shop for all your fashion
+and lifestyle needs. Quality products, fast
+delivery, and excellent support.</p>
+
+            </div>
+            <div>
+                <div class=" grid">
+                <h6 class="footer-title">QUICK LINKS</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">Products</a>
+                <a class="link link-hover">About</a>
+                <a class="link link-hover">Contact</a>
+            </div>
+            </div>
+            <div>
+                <div class=" grid">
+                <h6 class="footer-title">SUPPORT</h6>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Shipping</a>
+                <a class="link link-hover">Returns</a>
+                <a class="link link-hover">Privacy policy</a>
+            </div>
+            </div>
+            <div>
+                <form class="">
+                <h6 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h6>
+                <fieldset class="w-90 flex-col space-y-5">
+                    <label>The latest news, articles, and resources,
+                        sent to your inbox weekly.</label>
+                    <div class="join pt-3">
+                        <input type="text" placeholder="Enter your email"
+                            class="input input-bordered join-item placeholder-[#333333]" />
+                        <button class="btn btn-primary join-item">Subscribe</button>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="copyright-socialmedia flex justify-between text-white w-full md:w-9/12 mx-auto p-10 text-xs">
+            <div class="copyrught">
+                <p>2025 SwiftCart, Inc. All rights reserved.</p>
+            </div>
+            <div class="social text-[15px]">
+                <a href="#"><i class="fa-brands fa-facebook "></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
 
     <script src="/scripts/index.js"></script>
+    <script src="./scripts/loadCategoryWiseProducts.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 .nav-link.active {
             color: #422AD5;
             font-weight: 600;
